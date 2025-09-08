@@ -1,0 +1,7 @@
+# IDE files
+.idea/
+
+# Pycache
+manchild/__pycache__/
+manchild_server/__pycache__/
+manchild_server/migrations/__pycache__/
