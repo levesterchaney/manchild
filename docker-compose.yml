@@ -25,5 +25,12 @@ services:
     depends_on:
       db:
         condition: service_healthy
+  client:
+    build: manchild_client
+    command: nginx -g 'daemon off;'
+    ports:
+      - "80:80"
+    depends_on:
+      - server
 volumes:
   postgres_data:
